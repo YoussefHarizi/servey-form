@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Servey Form</title>
+	<link rel="stylesheet" type="text/css" href="css/mystyle.css">
+</head>
+<body>
+	<div class="nav">
+		<h1 id="title">Survey Form</h1>
+	</div>
+	<div class="formulaire">
+		<p id="description">Let us know how we can improve freeCodeCamp</p>
+		<form id="survey-form">
+			<div>
+				<div class="labels">
+					<label id="name-label" for="name">*Name : </label>
+				</div>
+				<div class="rightTab">
+					<input id="name" class="field" type="text" name="names" placeholder="Enter your name" required="" autofocus="" >
+				</div>
+			</div>
+			<div>
+				<div class="labels">
+					<label for="email" id="email-label" >*Email : </label>
+				</div>
+				<div class="rightTab">
+					<input type="email" name="" id="email" class="field" required="" placeholder="Enter your Email">
+				</div>
+			</div>
+			<div>
+				<div class="labels">
+					<label id="number-label" for="number">*Age : </label>
+				</div>
+				<div class="rightTab">
+					<input type="number" name="" id="number" class="field" min="1" max="150" placeholder="Age">
+				</div>
+			</div>
+			<div>
+				<div class="labels">
+					<label>Which option best describes your current role?</label>
+				</div>
+				<div class="rightTab">
+					<select id="like" class="dropdown">
+						<option disabled="" value="">Select an option</option>
+						<option value="student">Challeges</option>
+						<option value="job">Projects</option>
+						<option value="learner">Community</option>
+						<option value="preferNo">Open Source</option>
+					</select>
+				</div>
+			</div>
+			<div>
+				<div class="labels">
+					<label>* How likely is that you would recommend freeCodeCamp to a friend?</label>
+				</div>
+				<div class="rightTab">
+					<div class="choix"><input type="radio" name="radio_bnt" value="1"><label>Definitely</label></div>
+					<div class="choix"><input type="radio" name="radio_bnt" value="2"><label>Maybe</label></div>
+					<div class="choix"><input type="radio" name="radio_bnt" value="3"><label>Not sure</label></div>
+				</div>
+			</div>
+			<div>
+				<div class="labels">
+					<label>What do you like most in FCC:</label>
+				</div>
+				<div class="rightTab">
+					<select id="dropdown" class="dropdown">
+						<option disabled="" value="" selected="">Select an option</option>
+						<option value="student">Student</option>
+						<option value="job">Full Time Job</option>
+						<option value="learner">Full Time Learner</option>
+						<option value="preferNo">Prefer not to say</option>
+						<option value="other">Other</option>
+						
+					</select>
+				</div>
+			</div>
+			<div>
+				<div class="labels">
+					<label>Things that should be improved in the future (Check all that apply):</label>
+				</div>
+				<div class="rightTab">
+					<div class="choix"><input type="checkbox" name="prefer" value="1">Front-end Projects</div>
+					<div class="choix"><input type="checkbox" name="prefer" value="2">bACK-end Projects</div>
+					<div class="choix"><input type="checkbox" name="prefer" value="3">Front-end Projects</div>
+					<div class="choix"><input type="checkbox" name="prefer" value="4">Data Visualization</div>
+					<div class="choix"><input type="checkbox" name="prefer" value="5">Challeges</div>
+					<div class="choix"><input type="checkbox" name="prefer" value="6">Open Source Community</div>
+					<div class="choix"><input type="checkbox" name="prefer" value="7">Gitter help rooms</div>
+					<div class="choix"><input type="checkbox" name="prefer" value="8">Video</div>
+					<div class="choix"><input type="checkbox" name="prefer" value="9">City Meetups</div>
+					<div class="choix"><input type="checkbox" name="prefer" value="10">Wiki</div>
+					<div class="choix"><input type="checkbox" name="prefer" value="11">Forum</div>
+					<div class="choix"><input type="checkbox" name="prefer" value="12">Additional Courses</div>
+				</div>
+			</div>
+			<div>
+				<div class="labels">
+					<label>Any Comments or Suggestions?</label>
+				</div>
+				<div class="rightTab">
+					<textarea class="area" placeholder="Enter your Commet here ..."></textarea>
+				</div>
+			</div>
+			<button type="submit" id="submit">Submit</button>
+
+
+			
+		</form>
+	</div>
+
+
+	<script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</body>
+</html>
